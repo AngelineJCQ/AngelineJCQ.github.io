@@ -4,7 +4,7 @@ html, body {
 }
 
 a:link {
-    color: #a7a8bd;
+    color: #787888;
     background-color: transparent;
     }
 
@@ -16,6 +16,7 @@ a:visited {
 
 .welcome-container {
     max-width: 760px;
+    height: 100vh;
     margin: 0 auto;
     margin-top: 10px;
     padding: 20px;
@@ -39,7 +40,7 @@ a:visited {
 .welcome-container h1 {
     font-family: 'Dancing Script', cursive;
     color: white;
-    font-size:50px;
+    font-size:70px;
     text-align: center;
 }
 
@@ -47,7 +48,8 @@ a:visited {
     font-family: 'Yantramanav', sans-serif;
     color: white;
     font-size: 30px;
-    margin-top: 50px;
+    margin-top: 40px;
+    line-height: 50px;
 }
 
 .emp {
