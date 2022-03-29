@@ -1,0 +1,45 @@
+html, body {
+    margin: 0;
+    background-color:white;
+}
+
+.text-container {
+    max-width: 760px;
+    margin: 0px auto;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    color:black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.byline {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font: 15px;
+    text-align: right;
+}
+
+.picture{
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+p {
+    margin-top: 20px;
+    font-size: large;
+    font-family: 'Frank Ruhl Libre', serif;;
+    line-height: 30px;
+}
+
+.caption {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-style: italic;
+    margin: 0px auto;
+    font-size: 0.9;
+    color: grey;
+    text-align: center;
+}
