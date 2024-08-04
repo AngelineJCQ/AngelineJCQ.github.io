@@ -1,0 +1,255 @@
+html, body {
+    margin: 0;
+    background-color: #EAE7DC;
+}
+
+.first-page {
+    height:100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .column {
+    display: flex;
+    align-items: center;
+    height: 20px;
+  }
+  .column a {
+    text-decoration: none;
+    color: #E85A4F;
+    padding: 0 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight:500;
+  }
+  .divider {
+    color: #707070;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+.main-title-wrap {
+    z-index: 10;
+    min-width: 493px;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 25px;
+    display:flex;
+    position: relative;
+}
+
+.corner {
+        width: 50px;
+        height: 50px;
+        border: 7px solid #E85A4F;
+        position: absolute;
+}
+
+.corners-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.corner.top-left {
+    border-bottom-style: none;
+    border-right-style: none;
+    top: 0;
+    left: 0;
+}
+
+.corner.top-right {
+    border-bottom-style: none;
+    border-left-style: none;
+    top: 0;
+    right: 0;
+}
+
+.corner.bottom-right {
+    border-top-style: none;
+    border-left-style: none;
+    bottom: 0;
+    right: 0;
+}
+
+.corner.bottom-left {
+    border-top-style: none;
+    border-right-style: none;
+    bottom: 0;
+    left: 0;
+}
+
+.corners-wrap.shadow {
+    opacity: .55;
+    filter: blur(7px);
+    top: -6px;
+    bottom: auto;
+    left: -6px;
+    right: auto;
+}
+
+.subtitle {
+    width: 100%;
+    color: #707070;
+    text-align: center;
+    letter-spacing: .1em;
+    font-family: "Special Elite", system-ui;
+    font-size: 1.3em;
+    font-weight: 600;
+    line-height: 1.4;
+    position: relative;
+}
+
+.welcome-container {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 20px;
+}
+
+.main-title {
+    color: #EA8074;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-family: Fredericka the Great, sans-serif;
+    font-size: 3.8em;
+    line-height: .7;
+}
+
+.main-title.small {
+    letter-spacing: .1em;
+    margin-bottom: 20px;
+    font-size: 2.4em;
+}
+
+
+.external-link {
+    color: #E85A4F;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.subtitle a {
+    color: #E85A4F;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.bold-text {
+    font-size: 1.2em;
+}
+
+.card-container {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 30px;
+    gap:2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 330px;
+    grid-template-rows: 210px 240px 50px;
+    grid-template-areas: "image" "text" "tag";
+    background-color: white;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 5px 5px 15px rgba(133, 133, 133, 0.9);
+}
+.card-img img {
+    grid-area: image;
+    width: 100%;
+}
+
+.card-text {
+    grid-area: text;
+}
+
+.card-text .date-beat {
+    margin-left: 0;  
+}
+
+.date {
+    margin-left: 0;
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: "Merriweather", serif;
+}
+
+.beat {
+    font-size: 12px;
+    color: #fff;
+    background-color: #EA8074;
+    padding: 2px 6px;
+    font-family: "Merriweather", serif;
+    border-radius: 2px;
+}
+
+.card-text .title {
+    margin-top: 30px;   
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-text a{
+    font-size: 20px;
+    color: #E85A4F;
+    text-decoration: none;
+    font-family: Fredericka the Great, sans-serif;
+    
+}
+
+.card-text p{
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: justify;
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    color: #707070;
+    line-height: 1.7;
+}
+
+
+.card-tag {
+    grid-area: tag;
+}
+
+.card-tag button{
+    margin-top: 10px;
+    margin-right: 20px;
+    border-radius:10px;
+    border-color: #E85A4F;
+    color: #E85A4F;
+    background-color: white;
+    font-family: "Special Elite", system-ui;
+}
