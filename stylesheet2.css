@@ -159,6 +159,70 @@ html, body {
     font-size: 1.2em;
 }
 
+.contentDiv {
+    height: 100px;
+    width: 200px;
+    bottom: 5px;
+    position: absolute;
+    padding: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.note {
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.note p{
+    font-family: "Merriweather", serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #707070;
+}
+
+.title-text {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #E85A4F;
+    text-decoration: none;
+    font-family: Fredericka the Great, sans-serif;
+}
+
+.tag-text {
+    border-color: #E85A4F;
+    color: #E85A4F;
+    font-family: "Special Elite", system-ui;
+    border-radius:5px;
+    border-style: solid;
+    padding: 5px;
+
+}
+
 .card-container {
     width: 100%;
     flex-direction: row;
@@ -247,7 +311,8 @@ html, body {
 .card-tag button{
     margin-top: 10px;
     margin-right: 20px;
-    border-radius:10px;
+    border-radius:5px;
+    padding:4px;
     border-color: #E85A4F;
     color: #E85A4F;
     background-color: white;
