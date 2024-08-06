@@ -250,8 +250,13 @@ html, body {
     transform: scale(1.03);
     box-shadow: 5px 5px 15px rgba(133, 133, 133, 0.9);
 }
-.card-img img {
+
+.card-img {
     grid-area: image;
+    overflow: hidden;
+}
+
+.card-img img {
     width: 100%;
 }
 
